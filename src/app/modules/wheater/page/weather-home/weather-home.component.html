@@ -19,4 +19,7 @@
   </form>
 </div>
 
-<app-weather-card></app-weather-card>
+<app-weather-card
+  *ngIf="weatherDatas"
+  [weatherDatasInput]="weatherDatas"
+></app-weather-card>
